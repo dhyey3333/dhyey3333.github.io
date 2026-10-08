@@ -11,7 +11,6 @@ function Footer() {
         <a href="https://github.com/dhyey3333" target="_blank" rel="noreferrer" aria-label="GitHub"><GitHubIcon/></a>
         <a href={gmailCompose()} target="_blank" rel="noreferrer" aria-label="Email"><EmailIcon/></a>
       </div>
-      <p>© 2026 Dhyey Ghoda · Design based on a template by <a href="https://github.com/yujisatojr/react-portfolio-template" target="_blank" rel="noreferrer">Yuji Sato</a></p>
     </footer>
   );
 }
