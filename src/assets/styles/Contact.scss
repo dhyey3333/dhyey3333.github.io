@@ -46,3 +46,10 @@ form {
   width: 100% !important;
   margin-bottom: 15px !important;
 }
+.email-line {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-weight: 600;
+}

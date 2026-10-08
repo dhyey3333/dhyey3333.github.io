@@ -3,11 +3,12 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import DescriptionIcon from '@mui/icons-material/Description';
 import avatar from '../assets/images/avatar.svg';
+import { gmailCompose } from './Contact';
 import '../assets/styles/Main.scss';
 
 const links = [
   { href: "https://github.com/dhyey3333", label: "GitHub", icon: <GitHubIcon/> },
-  { href: "mailto:dhyeyghoda03@gmail.com", label: "Email", icon: <EmailIcon/> },
+  { href: gmailCompose(), label: "Email", icon: <EmailIcon/> },
   { href: `${process.env.PUBLIC_URL}/Dhyey_Ghoda_Resume.pdf`, label: "Resume", icon: <DescriptionIcon/> },
 ];
 

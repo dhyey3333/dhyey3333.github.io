@@ -3,9 +3,15 @@ import '../assets/styles/Contact.scss';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import TextField from '@mui/material/TextField';
 
 const EMAIL = 'dhyeyghoda03@gmail.com';
+
+// Gmail's compose page in the browser. A mailto: link only works when a mail app is set up on the
+// visitor's computer, and on many it isn't, so clicking it did nothing.
+export const gmailCompose = (subject = '', body = '') =>
+  `https://mail.google.com/mail/?view=cm&fs=1&to=${EMAIL}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
 function Contact() {
 
@@ -16,9 +22,16 @@ function Contact() {
   const [nameError, setNameError] = useState<boolean>(false);
   const [emailError, setEmailError] = useState<boolean>(false);
   const [messageError, setMessageError] = useState<boolean>(false);
+  const [copied, setCopied] = useState<boolean>(false);
 
-  // A static site has no server to send mail from, so Send opens the visitor's own email app
-  // with the message already written to me. Nothing is collected or stored by this page.
+  const copyEmail = async () => {
+    try { await navigator.clipboard.writeText(EMAIL); } catch { window.prompt('Copy my email address:', EMAIL); return; }
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  // A static site has no server to send mail from, so Send opens Gmail in a new tab with the message
+  // already written to me. Nothing is collected or stored by this page.
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -29,7 +42,7 @@ function Contact() {
 
     const subject = `Hello from ${name.trim()} (via your portfolio)`;
     const body = `${message.trim()}\n\n${name.trim()}\n${email.trim()}`;
-    window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.open(gmailCompose(subject, body), '_blank', 'noopener');
   };
 
   return (
@@ -37,7 +50,11 @@ function Contact() {
       <div className="items-container">
         <div className="contact_wrapper">
           <h1>Contact Me</h1>
-          <p>Looking for an intern who ships? Write to me here, or directly at <a href={`mailto:${EMAIL}`}>{EMAIL}</a>.</p>
+          <p>Looking for an intern who ships? Write to me here (it opens Gmail with your message ready), or email me directly:</p>
+          <p className="email-line">
+            <a href={gmailCompose()} target="_blank" rel="noreferrer">{EMAIL}</a>
+            <Button size="small" variant="outlined" startIcon={<ContentCopyIcon />} onClick={copyEmail}>{copied ? 'Copied!' : 'Copy'}</Button>
+          </p>
           <Box
             component="form"
             noValidate
@@ -87,7 +104,7 @@ function Contact() {
               helperText={messageError ? "Please enter the message" : ""}
             />
             <Button type="submit" variant="contained" endIcon={<SendIcon />}>
-              Send
+              Send with Gmail
             </Button>
           </Box>
         </div>
