@@ -37,9 +37,10 @@ const projects: ProjectItem[] = [
     {
         title: "Credit Card Fraud Detection",
         image: fraud,
-        alt: "Credit card fraud detection project cover",
-        text: "Compared logistic regression, random forest, XGBoost and neural networks on a heavily imbalanced dataset using SMOTE and feature scaling, with predictions served in a Streamlit dashboard.",
-        tags: "Scikit-learn · XGBoost · TensorFlow · Streamlit",
+        link: "https://github.com/dhyey3333/credit-card-fraud-detection",
+        alt: "The fraud detection dashboard: fraud count, rate and distribution for an uploaded set of transactions",
+        text: "Logistic regression and a neural network on 284,807 real card transactions, of which only 0.17% are fraud. On a held-out test set the logistic regression catches 92% of frauds (ROC-AUC 0.97) and the neural network reaches 0.82 precision. A Streamlit dashboard checks single transactions or whole CSVs, with a confusion matrix and PDF report.",
+        tags: "Python · Scikit-learn · TensorFlow · Streamlit",
     },
     {
         title: "Emergency Bike Crash SOS System",
