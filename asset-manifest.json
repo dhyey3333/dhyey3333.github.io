@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.2ec0a714.css",
-    "main.js": "/static/js/main.5ba63000.js",
+    "main.js": "/static/js/main.f43e6616.js",
     "static/js/206.288cb4bf.chunk.js": "/static/js/206.288cb4bf.chunk.js",
     "static/media/bg-light.png": "/static/media/bg-light.bac0efb485244a522981.png",
     "static/media/bg-dark.png": "/static/media/bg-dark.f420c6b8458af72de935.png",
     "static/media/threat.jpg": "/static/media/threat.4800df2a0648e7103e2b.jpg",
     "static/media/privagent.jpg": "/static/media/privagent.19d2b4cc706c1b7ea1c6.jpg",
     "static/media/nightshift.jpg": "/static/media/nightshift.c0b327c4e8f85d00b2f2.jpg",
-    "static/media/fraud.jpg": "/static/media/fraud.6f78a7251d16af0ddd04.jpg",
     "static/media/bike.jpg": "/static/media/bike.2575afcf1335a9913a5e.jpg",
+    "static/media/fraud.jpg": "/static/media/fraud.0494b62377f9ef2e87d3.jpg",
     "index.html": "/index.html",
     "static/media/avatar.svg": "/static/media/avatar.57ae6038408620ad383f7fe0700a0459.svg"
   },
   "entrypoints": [
     "static/css/main.2ec0a714.css",
-    "static/js/main.5ba63000.js"
+    "static/js/main.f43e6616.js"
   ]
 }
