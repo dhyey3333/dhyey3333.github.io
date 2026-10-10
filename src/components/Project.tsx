@@ -39,7 +39,7 @@ const projects: ProjectItem[] = [
         image: fraud,
         link: "https://github.com/dhyey3333/credit-card-fraud-detection",
         alt: "The fraud detection dashboard: fraud count, rate and distribution for an uploaded set of transactions",
-        text: "Logistic regression and a neural network on 284,807 real card transactions, of which only 0.17% are fraud. On a held-out test set the logistic regression catches 92% of frauds (ROC-AUC 0.97) and the neural network reaches 0.82 precision. A Streamlit dashboard checks single transactions or whole CSVs, with a confusion matrix and PDF report.",
+        text: "Logistic regression and a neural network on 284,807 real card transactions, of which only 0.17% are fraud. On a held-out test set the logistic regression catches 92% of frauds (ROC-AUC 0.97) and the neural network reaches 0.82 precision. A Streamlit dashboard scores uploaded CSVs of transactions, with a confusion matrix and a PDF report.",
         tags: "Python · Scikit-learn · TensorFlow · Streamlit",
     },
     {
