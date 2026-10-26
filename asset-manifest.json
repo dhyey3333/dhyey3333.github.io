@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.79e6d5f2.css",
+    "main.css": "/static/css/main.f1eac0f3.css",
     "main.js": "/static/js/main.4ceab632.js",
     "static/js/453.0126a1b5.chunk.js": "/static/js/453.0126a1b5.chunk.js",
     "static/media/bg-light.png": "/static/media/bg-light.bac0efb485244a522981.png",
@@ -11,12 +11,12 @@
     "static/media/fraud.jpg": "/static/media/fraud.0494b62377f9ef2e87d3.jpg",
     "index.html": "/index.html",
     "static/media/avatar.svg": "/static/media/avatar.57ae6038408620ad383f7fe0700a0459.svg",
-    "main.79e6d5f2.css.map": "/static/css/main.79e6d5f2.css.map",
+    "main.f1eac0f3.css.map": "/static/css/main.f1eac0f3.css.map",
     "main.4ceab632.js.map": "/static/js/main.4ceab632.js.map",
     "453.0126a1b5.chunk.js.map": "/static/js/453.0126a1b5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.79e6d5f2.css",
+    "static/css/main.f1eac0f3.css",
     "static/js/main.4ceab632.js"
   ]
 }
