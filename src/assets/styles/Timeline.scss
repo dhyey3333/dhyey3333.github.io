@@ -36,3 +36,11 @@
         color: rgb(39, 40, 34);
     }
 }
+.vertical-timeline-element .timeline-link {
+    display: inline-block;
+    margin-top: 0.75em;
+    color: #5000ca;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}

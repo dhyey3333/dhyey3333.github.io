@@ -9,9 +9,12 @@ const iconStyle = { background: '#5000ca', color: 'rgb(39, 40, 34)' };
 
 // Work first, then hackathons, then education. Dates and details come from the internship certificate,
 // the repositories and the resume.
-const entries = [
+type Entry = { date: string; icon: typeof faBriefcase; title: string; place: string; text: string; link?: { href: string; label: string } };
+
+const entries: Entry[] = [
   { date: "May 2026 – Jun 2026", icon: faBriefcase, title: "Full-Stack Developer Intern", place: "Digizura Technologies Pvt. Ltd., Bangalore",
-    text: "Built CableNXT, a MERN-stack billing app for local cable operators: role-based JWT login, subscribers, packages, automatic invoicing and a revenue dashboard." },
+    text: "Built CableNXT, a MERN-stack billing app for local cable operators: role-based JWT login, subscribers, packages, automatic invoicing and a revenue dashboard.",
+    link: { href: "/Digizura_Internship_Certificate.pdf", label: "View internship certificate" } },
   { date: "Sep 2026", icon: faTrophy, title: "Argonyx Hackathon", place: "Team project",
     text: "Built a real-time AI/ML threat detection system for CCTV: weapons, fights, falls and intrusions, with an analyst dashboard." },
   { date: "2026", icon: faTrophy, title: "Smart India Hackathon", place: "ISRO problem statement",
@@ -41,6 +44,11 @@ function Timeline() {
               <h3 className="vertical-timeline-element-title">{entry.title}</h3>
               <h4 className="vertical-timeline-element-subtitle">{entry.place}</h4>
               <p>{entry.text}</p>
+              {entry.link && (
+                <a className="timeline-link" href={entry.link.href} target="_blank" rel="noopener noreferrer">
+                  {entry.link.label} &#8599;
+                </a>
+              )}
             </VerticalTimelineElement>
           ))}
         </VerticalTimeline>
