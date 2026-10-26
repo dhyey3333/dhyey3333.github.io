@@ -3,7 +3,6 @@ import nightshift from '../assets/images/nightshift.jpg';
 import privagent from '../assets/images/privagent.jpg';
 import threat from '../assets/images/threat.jpg';
 import fraud from '../assets/images/fraud.jpg';
-import bike from '../assets/images/bike.jpg';
 import '../assets/styles/Project.scss';
 
 type ProjectItem = { title: string; image: string; link?: string; alt: string; text: string; tags: string };
@@ -41,13 +40,6 @@ const projects: ProjectItem[] = [
         alt: "The fraud detection dashboard: fraud count, rate and distribution for an uploaded set of transactions",
         text: "Logistic regression and a neural network on 284,807 real card transactions, of which only 0.17% are fraud. On a held-out test set the logistic regression catches 92% of frauds (ROC-AUC 0.97) and the neural network reaches 0.82 precision. A Streamlit dashboard scores uploaded CSVs of transactions, with a confusion matrix and a PDF report.",
         tags: "Python · Scikit-learn · TensorFlow · Streamlit",
-    },
-    {
-        title: "Emergency Bike Crash SOS System",
-        image: bike,
-        alt: "Bike crash SOS project cover",
-        text: "An ESP32 device that detects a crash in real time from accelerometer and vibration sensors, then sends an automated SOS with the rider's GPS location over GSM.",
-        tags: "ESP32 · Sensors · GPS · GSM",
     },
 ];
 
