@@ -36,8 +36,10 @@
         color: rgb(39, 40, 34);
     }
 }
+// Block-level so the date, which floats left in the one-column layout, starts below the link instead of beside it.
 .vertical-timeline-element .timeline-link {
-    display: inline-block;
+    display: block;
+    width: fit-content;
     margin-top: 0.75em;
     color: #5000ca;
     font-weight: 600;
