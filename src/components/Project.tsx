@@ -1,5 +1,6 @@
 import React from "react";
 import nightshift from '../assets/images/nightshift.jpg';
+import conceptai from '../assets/images/conceptai.jpg';
 import privagent from '../assets/images/privagent.jpg';
 import threat from '../assets/images/threat.jpg';
 import fraud from '../assets/images/fraud.jpg';
@@ -16,6 +17,14 @@ const projects: ProjectItem[] = [
         alt: "Nightshift QA showing a test run with a visual bug caught",
         text: "An AI tester that runs plain-English test cases in a real browser. A judge model must quote proof from the page for every result, which gave 0 false passes in ~400 benchmark runs. It caught 23/23 planted bugs and judged 28/28 public practice sites correctly. Live multi-tenant web app with nightly runs and client reports.",
         tags: "Python · Playwright · Vision-language models · SQLite",
+    },
+    {
+        title: "ConceptAI: An AI Teacher on a Live Whiteboard",
+        image: conceptai,
+        link: "https://github.com/dhyey3333/conceptai",
+        alt: "ConceptAI teaching binary search in Python on a whiteboard, with the code and its real output",
+        text: "Teaches any topic on a live whiteboard: the teacher speaks while it draws diagrams, equations, arrays, trees and code. A second model fact-checks every part, and a Python service checks the maths exactly (SymPy) and actually runs the code on the board, so the output shown is real. Runs on free models only (Gemini, then Groq, then a local Ollama model) and can teach every page of an uploaded PDF, with OCR for scans.",
+        tags: "Next.js · TypeScript · Python · FastAPI · SymPy",
     },
     {
         title: "PrivAgent: On-Device Privacy for AI Browser Agents",
