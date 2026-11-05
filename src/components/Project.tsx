@@ -4,12 +4,21 @@ import conceptai from '../assets/images/conceptai.jpg';
 import privagent from '../assets/images/privagent.jpg';
 import threat from '../assets/images/threat.jpg';
 import fraud from '../assets/images/fraud.jpg';
+import routera from '../assets/images/routera.jpg';
 import '../assets/styles/Project.scss';
 
 type ProjectItem = { title: string; image: string; link?: string; alt: string; text: string; tags: string };
 
-// Every number here is a measured result from the project's own benchmark.
+// Every number here is a measured result from the project's own benchmark, or a prize actually won.
 const projects: ProjectItem[] = [
+    {
+        title: "ROUTERA: Agentic AI for Perishable Exports",
+        image: routera,
+        link: "https://github.com/dhyey3333/routera",
+        alt: "ROUTERA's control room: a confirmed road closure, the affected containers on a live map and a plan waiting for approval",
+        text: "2nd place and ₹50,000 at SAP Hackfest 2026, a national-level hackathon, with team Code Catalyst. When a road, port, market or tariff breaks, ROUTERA re-plans every affected container of grapes, mangoes, onions and other perishables by the shelf life left on arrival, what each market pays and how much it can take before its price drops. Runs on SAP BTP with five live feeds (weather, UN/EU disaster alerts, TomTom traffic, news, ships); a person approves every move, from the control room or Telegram, and each decision goes into a tamper-evident log.",
+        tags: "Python · FastAPI · SAP BTP · Leaflet · GSAP",
+    },
     {
         title: "Nightshift QA: AI Regression Testing Platform",
         image: nightshift,
