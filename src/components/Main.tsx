@@ -1,5 +1,6 @@
 import React from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import DescriptionIcon from '@mui/icons-material/Description';
 import avatar from '../assets/images/avatar.svg';
@@ -8,6 +9,7 @@ import '../assets/styles/Main.scss';
 
 const links = [
   { href: "https://github.com/dhyey3333", label: "GitHub", icon: <GitHubIcon/> },
+  { href: "https://www.linkedin.com/in/dhyey-ghoda-4b060423b", label: "LinkedIn", icon: <LinkedInIcon/> },
   { href: gmailCompose(), label: "Email", icon: <EmailIcon/> },
   { href: `${process.env.PUBLIC_URL}/Dhyey_Ghoda_Resume.pdf`, label: "Resume", icon: <DescriptionIcon/> },
 ];
